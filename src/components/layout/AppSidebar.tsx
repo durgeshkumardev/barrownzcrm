@@ -127,13 +127,20 @@ export function AppSidebar() {
               </p>
             </div>
           )}
-          <button
-            onClick={handleLogout}
-            className="sidebar-item w-full border text-black border-black text-sidebar-foreground/70 hover:text-sidebar-foreground"
-          >
-            <LogOut className="h-5 w-5 flex-shrink-0" />
-            {!collapsed && <span>Logout</span>}
-          </button>
+      <button
+  onClick={handleLogout}
+  className="group sidebar-item w-full border border-black bg-white 
+             text-black hover:bg-black hover:text-white transition-colors duration-200"
+>
+  <LogOut className="h-5 w-5 flex-shrink-0 text-black group-hover:text-white" />
+  {!collapsed && (
+    <span className="text-black group-hover:text-white">
+      Logout
+    </span>
+  )}
+</button>
+
+
         </div>
       </div>
     </motion.aside>
