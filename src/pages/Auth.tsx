@@ -182,11 +182,21 @@ export default function Auth() {
           className="w-full max-w-md"
         >
           {/* Mobile Logo */}
-          <div className="lg:hidden flex items-center justify-center gap-2 mb-8">
+          {/* <div className="lg:hidden flex items-center justify-center gap-2 mb-8">
             <div className="flex h-10 w-10 items-center justify-center rounded-lg gradient-primary">
               <Zap className="h-5 w-5 text-primary-foreground" />
             </div>
             <span className="text-2xl font-bold">AutoFlow</span>
+          </div> */}
+          
+
+            <div className="lg:hidden flex items-center justify-center gap-2 mb-8">
+              <div className="flex items-center gap-3 mb-8">
+            
+               <img src="barrownzlogo.png" className="h-24" alt="" />
+      
+      
+            </div>
           </div>
 
           <div className="text-center mb-8">
